@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ارائه کامل ریاضی پایه نهم - ۲، اسلاید</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --accent-color: #d93025;
+            --bg-color: #f0f2f5;
+            --card-bg: #ffffff;
+            --text-color: #202124;
+        }
+
+        body {
+            font-family: 'Vazirmatn', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            direction: rtl;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin: 0 0 10px 0;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: #5f6368;
+            font-size: 1.1rem;
+        }
+
+        .slide {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+            border-right: 6px solid var(--primary-color);
+            position: relative;
+        }
+
+        .slide-number {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            background: #e8f0fe;
+            color: var(--primary-color);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .slide h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 1.4rem;
+            border-bottom: 2px solid #e8eaed;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            line-height: 1.8;
+            padding-right: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .formula-box {
+            background-color: #e8f0fe;
+            border: 1px solid #aecbfa;
+            border-radius: 8px;
+            padding: 12px 20px;
+            margin: 15px 0;
+            font-weight: bold;
+            color: #174ea6;
+            text-align: center;
+            direction: ltr;
+        }
+
+        .note {
+            background-color: #fce8e6;
+            border-right: 4px solid var(--accent-color);
+            padding: 12px 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+            color: #c5221f;
+        }
+
+        .example {
+            background-color: #f1f8e9;
+            border-right: 4px solid #7cb342;
+            padding: 12px 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+
+        .example-title {
+            font-weight: bold;
+            color: #33691e;
+            margin-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #70757a;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>فصل اول ریاضی پایه نهم (ارائه ۲۰ اسلایدی)</h1>
+            <div class="subtitle">مجموعه‌ها، زیرمجموعه‌ها، نمادهای ریاضی، نمودار ون و احتمالات</div>
+        </header>
+
+        <!-- اسلاید ۱ -->
+        <div class="slide">
+            <span class="slide-number">اسلاید ۱</span>
+            <h2>۱. تعریف مجموعه و ویژگی‌های آن</h2>
+            <p><strong>مجموعه:</strong> دسته‌ای از اشیاء مشخص و کاملاً متمایز (غیرتکراری) است.</p>
+            <ul>
+                <li>عضویت با نماد \( \in \) و عدم عضویت با نماد \( \notin \) نشان داده می‌شود.</li>
+                <li>ترتیب نوشتن اعضا در مجموعه تاثیری در تغییر مجموعه ندارد.</li>
+            </ul>
+        </div>
+
+        <!-- اسلاید ۲ -->
+        <div class="slide">
+            <span class="slide-number">اسلاید ۲</span>
+            <h2>۲. تعداد اعضای مجموعه و حذف اعضای تکراری</h2>
+            <p>تعداد اعضای مجموعه \( A \) را با \( n(A) \) نمایش می‌دهند.</p>
+            <div class="example">
+                <div class="example-title">بررسی مثال جزوه:</div>
+                اگر \( B = \{-3, -3, -3, 8, 8\} \) باشد، با حذف اعضای تکراری داریم:
+                <br>
+                \( B = \{-3, 8\} \)
+                <br>
+                بنابراین: \( n(B) = 2 \) و همچنین \( -3 \in B \) و \( 8 \in B \).
+            </div>
+        </div>
+
+        <!-- اسلاید ۳ -->
+        <div class="slide">
+            <span class="slide-number">اسلاید ۳</span>
+            <h2>۳. تشخیص مجموعه بودن یا نبودن عبارت‌ها</h2>
+            <p>یک عبارت زمانی مجموعه است که اعضای آن دقیقاً مشخص و معلوم باشند.</p>
+            <ul>
+                <li><strong>مثال ۱:</strong> "سه عدد طبیعی یک‌رقمی" \(\rightarrow \{1, 2, 3\}\) (مجموعه است).</li>
+                <li><strong>مثال ۲:</strong> "اعداد اول کوچک‌تر از ۱۲" \(\rightarrow \{2, 3, 5, 7, 11\}\) (مجموعه است).</li>
+            </ul>
+            <div class="note">
+                <strong>عبارات کیفی مجموعه نیستند:</strong> عبارت "سه تیم لیگ برتر" یا "اعداد اول کوچک از ۱۲" (در صورتی که اعضا مشخص نباشند یا سلیقه‌ای باشند) مجموعه محسوب نمی‌شوند چون اعضای آن‌ها مشخص نیست.
+            </div>
+        </div>
+
+        <!-- اسلاید ۴ -->
+        <div class="slide">
+            <span class="slide-number">اسلاید ۴</span>
+            <h2>۴. مجموعه تهی و نکات امتحانی</h2>
+            <p>مجموعه‌ای که هیچ عضوی ندارد را <strong>مجموعه تهی</strong> می‌نامند و با \( \varnothing \) یا \( \{\} \) نمایش می‌دهند.</p>
+            <div class="example">
+                <div class="example-title">مثال‌های مجموعه تهی:</div>
+                <ul>
+                    <li>اعداد طبیعی بین ۴ و ۵ \(\rightarrow \varnothing\)</li>
+                    <li>عدد زوج اول دو رقمی \(\rightarrow \varnothing\)</li>
+                    <li>اعداد صحیح بین ۱- و ۱ \(\rightarrow \{0\}\) ⚠️ (این مجموعه تهی نیست و یک عضو به نام صفر دارد).</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- اسلاید ۵ -->
+        <div class="slide">
+            <span class="slide-number">اسلاید ۵</span>
+            <h2>۵. دام‌های امتحانی نماد تهی</h2>
+            <div class="note">
+                <strong>نکته بسیار مهم امتحانی:</strong>
+                <br>
+                عبارات \( \{\varnothing\} \) و \( \{ \varnothing, \{\} \} \) مجموعه تهی **نیستند**!
+                <br>
+                مجموعه \( \{\varnothing\} \) دارای یک عضو است (که آن عضو خودِ نماد تهی است).
+            </div>
+        </div>
+
+        <!-- اسلاید ۶ -->
+        <div class="slide">
+            <span class="slide-number">اسلاید ۶</span>
+            <h2>۶. نمایش مجموعه با نمودار ون</h2>
+            <p>نمایش اعضای مجموعه درون منحنی‌های بسته را نمودار ون می‌نامند.</p>
+            <div class="example">
+                <div class="example-title">مثال:</div>
+                اگر \( A = \{-1, 4, 5, 6, 7\} \) و \( B = \{-1, 5, 8, 9\} \) باشند، اعضای مشترک در بخش تداخل منحنی‌ها قرار می‌گیرند.
+            </div>
+        </div>
+
+        <!-- اسلاید ۷ -->
+        <div class="slide">
+            <span class="slide-number">اسلاید ۷</span>
+            <h2>۷. مفهوم زیرمجموعه (\( \subseteq \))</h2>
+            <p>اگر تمام اعضای مجموعه \( A \) درون مجموعه \( B \) موجود باشند، می‌گوییم \( A \) زیرمجموعه \( B \) است (\( A \subseteq B \)).</p>
+            <ul>
+                <li>نماد زیرمجموعه: \( \subseteq \)</li>
+                <li>نماد عدم زیرمجموعه: \( \nsubseteq \)</li>
+            </ul>
+            <div class="example">
+                اگر \( A = \{2, 3, -1\} \) باشد، آنگاه \( \{2, 3\} \subseteq A \) است، اما \( \{2, 3, 4\} \nsubseteq A \) (چون ۴ عضو A نیست).
+            </div>
+        </div>
+
+        <!-- اسلاید ۸ -->
+        <div class="slide">
+            <span class="slide-number">اسلاید ۸</span>
+            <h2>۸. فرمول تعداد زیرمجموعه‌ها</h2>
+            <div class="formula-box">
+                تعداد زیرمجموعه‌های یک مجموعه \( n \) عضوی = \( 2^n \)
+            </div>
+            <ul>
+                <li><strong>نکته ۱:</strong> مجموعه تهی (\( \varnothing \)) زیرمجموعه تمامی مجموعه‌هاست.</li>
+                <li><strong>نکته ۲:</strong> هر مجموعه زیرمجموعه خودش می‌باشد.</li>
+            </ul>
+        </div>
+
+        <!-- اسلاید ۹ -->
+        <div class="slide">
+            <span class="slide-number">اسلاید ۹</span>
+            <h2>۹. نوشتن تمامی زیرمجموعه‌های یک مجموعه</h2>
+            <div class="example">
+                <div class="example-title">مثال: تمام زیرمجموعه‌های مجموعه \( A = \{2, 3, -1\} \)</div>
+                چون \( n(A)=3 \) است، پس \( 2^3 = 8 \) زیرمجموعه دارد:
+                <br>
+                ۱) \( \varnothing \) (بدون عضو)
+                <br>
+                ۲) تک عضوی: \( \{2\}, \{3\}, \{-1\} \)
+                <br>
+                ۳) دو عضوی: \( \{2, 3\}, \{2, -1\}, \{3, -1\} \)
+                <br>
+                ۴) سه عضوی: \( \{2, 3, -1\} \)
+            </div>
+        </div>
+
+        <!-- اسلاید ۱۰ -->
+        <div class="slide">
+            <span class="slide-number">اسلاید ۱۰</span>
+            <h2>۱۰. مسائل مجهول‌دار زیرمجموعه‌ها</h2>
+            <div class="example">
+                <div class="example-title">مثال جزوه:</div>
+                مجموعه‌ای ۶۴ زیرمجموعه دارد. این مجموعه چند عضو دارد؟
+                <br>
+                \( 2^n = 64 \rightarrow 2^n = 2^6 \rightarrow n = 6 \) (۶ عضو دارد).
+                <br><br>
+                مجموعه‌ای با ۴ عضو، چند برابر مجموعه‌ای با ۹ عضو زیرمجموعه دارد؟
+                <br>
+                \( \frac{2^{10}}{2^6} = 2^4 = 16 \) برابر.
+            </div>
+        </div>
+
+        <!-- اسلاید ۱۱ -->
+        <div class="slide">
+            <span class="slide-number">اسلاید ۱۱</span>
+            <h2>۱۱. مجموعه‌های عددی معروف</h2>
+            <ul>
+                <li><strong>اعداد طبیعی:</strong> \( \mathbb{N} = \{1, 2, 3, ...\} \)</li>
+                <li><strong>اعداد حسابی:</strong> \( \mathbb{W} = \{0, 1, 2, 3, ...\} \)</li>
+                <li><strong>اعداد صحیح:</strong> \( \mathbb{Z} = \{..., -2, -1, 0, 1, 2, ...\} \)</li>
+                <li><strong>اعداد گویا:</strong> \( \mathbb{Q} = \{ \frac{a}{b} \mid a,b \in \mathbb{Z}, b \neq 0 \} \)</li>
+            </ul>
+            <div class="formula-box">
+                \( \mathbb{N} \subseteq \mathbb{W} \subseteq \mathbb{Z} \subseteq \mathbb{Q} \)
+            </div>
+        </div>
+
+        <!-- اسلاید ۱۲ -->
+        <div class="slide">
+            <span class="slide-number">اسلاید ۱۲</span>
+            <h2>۱۲. نمایش مجموعه‌ها با نماد ریاضی (بخش اول)</h2>
+            <div class="example">
+                <div class="example-title">تبدیل نماد ریاضی به اعضا:</div>
+                <ul>
+                    <li>\( \{ 2k \mid k \in \mathbb{N} \} = \{2, 4, 6, 8, ...\} \) (اعداد زوج)</li>
+                    <li>\( \{ 2k-1 \mid k \in \mathbb{N} \} = \{1, 3, 5, 7, ...\} \) (اعداد فرد)</li>
+                    <li>\( \{ 5n \mid n \in \mathbb{N} \} = \{5, 10, 15, ...\} \) (مضرب‌های ۵)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- اسلاید ۱۳ -->
+        <div class="slide">
+            <span class="slide-number">اسلاید ۱۳</span>
+            <h2>۱۳. نمایش مجموعه‌ها با نماد ریاضی (بخش دوم)</h2>
+            <div class="example">
+                <div class="example-title">تبدیل اعضا به نماد ریاضی:</div>
+                <ul>
+                    <li>\( \{10, 20, 30, ...\} = \{ 10k \mid k \in \mathbb{N} \} \)</li>
+                    <li>\( \{3, 5, 7, ...\} = \{ 2m+1 \mid m \in \mathbb{N} \} \)</li>
+                    <li>\( \{-1, 0, 1, 2, 3\} = \{ m \in \mathbb{Z} \mid -2 < m < 4 \} \)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- اسلاید ۱۴ -->
+        <div class="slide">
+            <span class="slide-number">اسلاید ۱۴</span>
+            <h2>۱۴. اجتماع دو مجموعه (\( \cup \))</h2>
+            <p><strong>اجتماع:</strong> مجموعه‌ای شامل همه اعضای مجموعه A یا B (کلمه کلیدی: <strong>یا / حداقل</strong>).</p>
+            <div class="formula-box">
+                \( A \cup B = \{ x \mid x \in A \text{ یا } x \in B \} \)
+            </div>
+            <div class="example">
+                اگر \( A = \{2, 3, 5, 7\} \) و \( B = \{-1, 2, 5, 8, 9\} \) باشد:
+                <br>
+                \( A \cup B = \{2, 3, 5, 7, -1, 8, 9\} \)
+            </div>
+        </div>
+
+        <!-- اسلاید ۱۵ -->
+        <div class="slide">
+            <span class="slide-number">اسلاید ۱۵</span>
+            <h2>۱۵. اشتراک دو مجموعه (\( \cap \))</h2>
+            <p><strong>اشتراک:</strong> مجموعه‌ای تنها شامل اعضای مشترک A و B (کلمه کلیدی: <strong>و</strong>).</p>
+            <div class="formula-box">
+                \( A \cap B = \{ x \mid x \in A \text{ و } x \in B \} \)
+            </div>
+            <div class="example">
+                اگر \( A = \{2, 3, 5, 7\} \) و \( B = \{-1, 2, 5, 8, 9\} \) باشد:
+                <br>
+                \( A \cap B = \{2, 5\} \)
+            </div>
+        </div>
+
+        <!-- اسلاید ۱۶ -->
+        <div class="slide">
+            <span class="slide-number">اسلاید ۱۶</span>
+            <h2>۱۶. تفاضل دو مجموعه (\( - \))</h2>
+            <p><strong>تفاضل A - B:</strong> اعضایی که در A هستند ولی در B وجود ندارند.</p>
+            <div class="formula-box">
+                \( A - B = \{ x \mid x \in A \text{ و } x \notin B \} \)
+            </div>
+            <div class="example">
+                برای مجموعه‌های اسلاید قبل:
+                <br>
+                \( A - B = \{3, 7\} \)
+                <br>
+                \( B - A = \{-1, 8, 9\} \)
+            </div>
+        </div>
+
+        <!-- اسلاید ۱۷ -->
+        <div class="slide">
+            <span class="slide-number">اسلاید ۱۷</span>
+            <h2>۱۷. روابط مهم تفاضل و مجموعه‌های خاص</h2>
+            <ul>
+                <li>\( \mathbb{W} - \mathbb{N} = \{0\} \)</li>
+                <li>\( \mathbb{N} - \mathbb{W} = \varnothing \)</li>
+                <li>\( \mathbb{Z} - \mathbb{N} = \{..., -2, -1, 0\} \)</li>
+                <li>\( A \cup A = A \) | \( A \cup \varnothing = A \) | \( A \cap \varnothing = \varnothing \)</li>
+            </ul>
+        </div>
+
+        <!-- اسلاید ۱۸ -->
+        <div class="slide">
+            <span class="slide-number">اسلاید ۱۸</span>
+            <h2>۱۸. مفهوم احتمال و فرمول اصلی</h2>
+            <p>احتمال رخ دادن یک پیشامد برابر است با نسبت تعداد حالات مطلوب به تعداد کل حالات ممکن.</p>
+            <div class="formula-box">
+                P(A) = \frac{n(A)}{n(S)}
+            </div>
+            <ul>
+                <li>فضای نمونه‌ای (\( S \)): مجموعه تمام حالت‌های ممکن.</li>
+            </ul>
+        </div>
+
+        <!-- اسلاید ۱۹ -->
+        <div class="slide">
+            <span class="slide-number">اسلاید ۱۹</span>
+            <h2>۱۹. احتمال در پرتاب یک تاس</h2>
+            <p>در پرتاب یک تاس کل حالات برابر است با: \( n(S) = 6 \)</p>
+            <div class="example">
+                <ul>
+                    <li>رو شدن عدد زوج: \( A=\{2,4,6\} \rightarrow P(A) = \frac{3}{6} = \frac{1}{2} \)</li>
+                    <li>رو شدن عدد اول: \( B=\{2,3,5\} \rightarrow P(B) = \frac{3}{6} = \frac{1}{2} \)</li>
+                    <li>رو شدن عدد زوج و اول: \( C=\{2\} \rightarrow P(C) = \frac{1}{6} \)</li>
+                    <li>رو شدن شمارنده ۴: \( D=\{1,2,4\} \rightarrow P(D) = \frac{3}{6} = \frac{1}{2} \)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- اسلاید ۲۰ -->
+        <div class="slide">
+            <span class="slide-number">اسلاید ۲۰</span>
+            <h2>۲۰. احتمال در پرتاب دو تاس با هم</h2>
+            <p>در پرتاب دو تاس، تعداد کل حالات برابر است با: \( n(S) = 6 \times 6 = 36 \)</p>
+            <div class="example">
+                <ul>
+                    <li><strong>هر دو عدد زوج باشند:</strong> ۹ حالت \( \rightarrow P = \frac{9}{36} = \frac{1}{4} \)</li>
+                    <li><strong>هر دو عدد اول باشند:</strong> ۹ حالت \( \rightarrow P = \frac{9}{36} = \frac{1}{4} \)</li>
+                    <li><strong>مجموع دو عدد برابر ۸ باشد:</strong> ۵ حالت \( \{(2,6),(6,2),(3,5),(5,3),(4,4)\} \rightarrow P = \frac{5}{36} \)</li>
+                    <li><strong>هر دو عدد مضرب ۳ باشند:</strong> ۴ حالت \( \{(3,3),(3,6),(6,3),(6,6)\} \rightarrow P = \frac{4}{36} = \frac{1}{9} \)</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            طراحی شده برای ارائه درس ریاضی پایه نهم - فصل مجموعه‌ها و احتمال (۲۰ اسلاید)
+        </footer>
+    </div>
+
+</body>
+</html>
